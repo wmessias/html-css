@@ -5,15 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imagem Flexível</title>
     <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <style>
+        body{
+            margin: 0;
+        }
+
+        .ajuste {
+            width: 100vw;
+            height: 300px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <h1>Imagem flexível</h1>
     <p>Você está vendo a imagem completa? Experimente amplicar ou reduzir o tamamnho da sua janela para aproveitar a melhor experiencia de redimensionamento da imagem</p>
-    <picture>
-        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="imagem/png"> 
-        <source media="(max-width: 1200px)" srcset="imagens/foto-m.png" type="image/png">
-        <img src="imagens/foto-g.png" alt="Imagem Flexível">
-    </picture>
+    
+        
+    <div class="ajuste">
+
+       
+       <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </div>
+   
     
 </body>
 </html>
